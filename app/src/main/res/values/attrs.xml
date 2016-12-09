@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ClockView">
+
+        <attr name="mRadius" format="dimension"/>
+        <attr name="mCircleColor" format="color"/>
+        <attr name="mCircleWidth" format="dimension"/>
+        <attr name="mTextSize" format="dimension"/>
+        <attr name="mTextColor" format="color"/>
+        <attr name="mBigScaleColor" format="color"/>
+        <attr name="mMiddlecaleColor" format="color"/>
+        <attr name="mSmallScaleColor" format="color"/>
+        <attr name="mHourHandColor" format="color"/>
+        <attr name="mMinuteHandColor" format="color"/>
+        <attr name="mSecondHandColor" format="color"/>
+        <attr name="mHourHandWidth" format="dimension"/>
+        <attr name="mMinuteHandWidth" format="dimension"/>
+        <attr name="mSecondHandWidth" format="dimension"/>
+
+    </declare-styleable>
+</resources>

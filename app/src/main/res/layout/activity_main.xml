@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="3dp"
+    android:background="@color/colorAccent"
+    tools:context="com.dalong.customviewstudy.MainActivity">
+
+  <com.dalong.customviewstudy.view.ClockView
+      app:mSecondHandColor="@color/colorAccent"
+      app:mCircleColor="@android:color/white"
+      app:mBigScaleColor="@android:color/black"
+      app:mMiddlecaleColor="@android:color/black"
+      app:mSmallScaleColor="@color/colorAccent"
+      app:mHourHandColor="@android:color/black"
+      app:mMinuteHandColor="@android:color/black"
+      app:mTextColor="@android:color/black"
+      app:mHourHandWidth="13dp"
+      app:mSecondHandWidth="5dp"
+      app:mMinuteHandWidth="8dp"
+      app:mTextSize="16sp"
+      android:layout_centerInParent="true"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+
+</RelativeLayout>
