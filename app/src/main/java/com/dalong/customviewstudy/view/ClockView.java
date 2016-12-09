@@ -235,7 +235,7 @@ public class ClockView extends View {
         mPaint.setColor(mMinuteHandColor);
         mPaint.setStrokeWidth(mMinuteHandWidth);
         //这里计算分针需要旋转的角度  60分钟360度，求出实际分钟数所占的度数
-        Float minutesAngle = minutes / 60f * 360;
+        Float minutesAngle = (minutes*60+seconds) / 60f/ 60f * 360;
         canvas.rotate(minutesAngle, mWidth / 2, mHeght / 2);
         canvas.drawLine(mWidth / 2, mHeght / 2 -  mWidth/2f*0.7f, mWidth / 2, mHeght / 2 +  mWidth/2f*0.15f, mPaint);
         canvas.restore();
@@ -273,7 +273,7 @@ public class ClockView extends View {
             switch (msg.what){
                 case START_CLOCK:
                     //更新时分秒
-                    postInvalidate();
+                    invalidate();
                     //每隔1秒更新一次
                     handler.sendEmptyMessageDelayed(START_CLOCK,1000);
                     break;
